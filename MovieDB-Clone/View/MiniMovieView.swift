@@ -20,6 +20,7 @@ struct MiniMovieView: View {
             VStack(alignment: .leading) {
                 Text(movie.title)
                     .lineLimit(1)
+                    .foregroundColor(.black)
                 
                 Text(movie.description)
                     .font(.subheadline)

@@ -18,6 +18,7 @@
 		84015C20260D0DFC00736A68 /* PopularMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84015C1F260D0DFC00736A68 /* PopularMoviesView.swift */; };
 		84015C23260D0E3A00736A68 /* MiniMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84015C22260D0E3A00736A68 /* MiniMovieView.swift */; };
 		84015C27260D13A800736A68 /* moviesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 84015C26260D13A800736A68 /* moviesData.json */; };
+		8418FE8C260E675400E519C2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418FE8B260E675400E519C2 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		84015C1F260D0DFC00736A68 /* PopularMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesView.swift; sourceTree = "<group>"; };
 		84015C22260D0E3A00736A68 /* MiniMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMovieView.swift; sourceTree = "<group>"; };
 		84015C26260D13A800736A68 /* moviesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moviesData.json; sourceTree = "<group>"; };
+		8418FE8B260E675400E519C2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				84015C1C260D0B3000736A68 /* MovieView.swift */,
 				84015C1F260D0DFC00736A68 /* PopularMoviesView.swift */,
 				84015C22260D0E3A00736A68 /* MiniMovieView.swift */,
+				8418FE8B260E675400E519C2 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84015C20260D0DFC00736A68 /* PopularMoviesView.swift in Sources */,
+				8418FE8C260E675400E519C2 /* DetailView.swift in Sources */,
 				84015BD3260CFFD900736A68 /* ContentView.swift in Sources */,
 				84015C1D260D0B3000736A68 /* MovieView.swift in Sources */,
 				84015C16260D06E200736A68 /* ModelData.swift in Sources */,

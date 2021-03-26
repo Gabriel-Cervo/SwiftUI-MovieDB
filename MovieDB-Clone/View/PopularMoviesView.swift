@@ -13,10 +13,23 @@ struct PopularMoviesView: View {
             Text("Popular Movies")
                 .font(.title3)
             
-            MiniMovieView(movie: movies[3])
-            MiniMovieView(movie: movies[4])
-            MiniMovieView(movie: movies[6])
-
+            NavigationLink(
+                destination: DetailView(movie: movies[3]),
+                label: {
+                    MiniMovieView(movie: movies[3])
+            })
+            
+            NavigationLink(
+                destination: DetailView(movie: movies[4]),
+                label: {
+                    MiniMovieView(movie: movies[4])
+            })
+            
+            NavigationLink(
+                destination: DetailView(movie: movies[6]),
+                label: {
+                    MiniMovieView(movie: movies[6])
+            })
         }
     }
 }

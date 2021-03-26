@@ -21,6 +21,7 @@ struct MovieView: View {
             Text(movie.title)
                 .lineLimit(1)
                 .frame(width: 115)
+                .foregroundColor(.black)
             
             HStack() {
                 Image(systemName: "star")

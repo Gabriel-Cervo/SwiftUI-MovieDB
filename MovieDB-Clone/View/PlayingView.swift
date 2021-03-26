@@ -20,9 +20,21 @@ struct PlayingView: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    MovieView(movie: movies[0])
-                    MovieView(movie: movies[1])
-                    MovieView(movie: movies[2])
+                    NavigationLink(
+                        destination: DetailView(movie: movies[0]),
+                        label: {
+                            MovieView(movie: movies[0])
+                        })
+                    NavigationLink(
+                        destination: DetailView(movie: movies[1]),
+                        label: {
+                            MovieView(movie: movies[1])
+                        })
+                    NavigationLink(
+                        destination: DetailView(movie: movies[2]),
+                        label: {
+                            MovieView(movie: movies[2])
+                        })
                 }
             }
             
