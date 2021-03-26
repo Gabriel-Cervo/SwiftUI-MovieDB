@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var searchText: String = ""
+    @State var isSeeAllActive: Bool = false
     
     var body: some View {
         NavigationView {
@@ -25,7 +26,7 @@ struct ContentView: View {
                     
                     Divider()
                     
-                    PlayingView()
+                    PlayingView(isSeeAllActive: $isSeeAllActive)
                         .padding(.vertical)
                     
                     Divider()
@@ -40,6 +41,9 @@ struct ContentView: View {
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
         }
+        .sheet(isPresented: $isSeeAllActive, content: {
+            AllMoviesView()
+        })
     }
 }
 

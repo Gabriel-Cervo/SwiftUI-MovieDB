@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct PlayingView: View {
+    @Binding var isSeeAllActive: Bool
+    
     var body: some View {
         VStack {
             HStack {
                 Text("Now playing")
                     .fontWeight(.bold)
                 Spacer()
-                Text("See all")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                Button("See all", action: {
+                    isSeeAllActive.toggle()
+                })
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                    
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
@@ -44,6 +49,6 @@ struct PlayingView: View {
 
 struct PlayingView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayingView()
+        PlayingView(isSeeAllActive: Binding.constant(false))
     }
 }
